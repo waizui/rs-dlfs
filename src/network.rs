@@ -1,4 +1,4 @@
-use crate::{functions::bdot, layers::*};
+use crate::{functions::bdot, layers::*, util};
 use nalgebra::DMatrix;
 type Real = f32;
 
