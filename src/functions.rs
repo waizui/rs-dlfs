@@ -17,5 +17,8 @@ pub fn sigmoid(x: &DMatrix<Real>) -> DMatrix<Real> {
 }
 
 pub fn softmax(x: &DMatrix<Real>) -> DMatrix<Real> {
-    todo!()
+    let max = x.max();
+    let v = x.map(|e| (e - max).exp());
+    let sum = v.sum();
+    v.map(|e| e / sum)
 }

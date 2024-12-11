@@ -98,6 +98,7 @@ flake.lock
 default.nix
 
 Cargo.lock
+asset/dataset/
 
 # Before adding new lines, see the comment at the top.
 
